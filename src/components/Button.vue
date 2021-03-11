@@ -27,19 +27,59 @@ props:{
     
     }
     .btn-register{
-    background: red;
+   background-color:rgb(206, 120, 0);
+      font-size: 1.5em;
+
+  font-weight: bolder;
+  border-radius:10px;
     color:white;
+    }
+.btn-register:hover{
+    color:white
+
+}
+.btn-freeVersion:hover{
+    color:white
 
 }
 
-@media (min-width: 992px) {
+@media(min-width:576px)
+{
+    .btn-freeVersion{
+        width: 55vw;
+    }
+.btn-register{
+width:55vw;
 
-    
 }
 
 
-@media (min-width: 1200px) { 
+}
 
+@media(min-width:992px){
+
+.btn-freeVersion{
+width:40vw;
 
 }
+.btn-register{
+width:40vw;
+
+}
+}
+@media(min-width:1200px){
+
+.btn-freeVersion{
+width:30vw;
+
+}
+.btn-register{
+width:30vw;
+
+}
+
+}
+
+
+
 </style>
