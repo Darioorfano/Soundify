@@ -20,14 +20,12 @@
   </button>
   <div class="collapse navbar-collapse collapse navbar-collapse d-lg-flex justify-content-lg-end d-xl-flex justify-content-xl-end ml-xl-5 " id="navbarNav">
     <ul class="navbar-nav mr-lg-5 mt-lg-2">
-      <li class="nav-item mr-xl-2 active">
-        <router-link to="/premium" class="nav-link mt-5 mt-sm-5 mt-lg-0 mr-xl-2">Premium <span class="sr-only">(current)</span></router-link>
-      </li>
+     
       <li class="nav-item  mr-xl-3">
         <router-link to="/login" class="nav-link">Iniciar Sesión</router-link>
       </li>
       <li class="nav-item mr-xl-3">
-        <a class="nav-link " href="#">Registrate</a>
+        <router-link to="/registro" class="nav-link ">Registrate</router-link>
       </li>
        <li class="nav-item mr-xl-3">
         <a class="nav-link" href="#">Descargar</a>

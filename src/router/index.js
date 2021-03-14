@@ -14,11 +14,20 @@ const routes = [
 
   },
  {
-  path:"/",
+  path:"/registro",
   name:"Registro",
   component:()=> import("../views/Registro.vue")
 },
-  {
+
+{
+  path:"/soundifyHome",
+  name:"SoundifyHome",
+  component:()=> import("../views/SoundifyHome.vue")
+},
+
+  
+
+{
     path: '/about',
     name: 'About',
     // route level code-splitting
