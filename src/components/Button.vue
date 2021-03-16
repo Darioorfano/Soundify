@@ -34,6 +34,7 @@ props:{
   border-radius:10px;
     color:white;
     }
+    
 .btn-register:hover{
     color:white
 

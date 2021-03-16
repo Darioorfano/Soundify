@@ -11,7 +11,7 @@
     <input type="password" class="form-control" id="InputContraseñaInicioSesion" placeholder="Contraseña">
   </div>
  
-    <router-link to="/soundify-player" ></router-link><Button  bclass="btn btn-freeVersion  mt-4 pt-3 pb-3 pl-5 pr-5 mb-5 mt-2 mb-2" valueButton="INICIAR SESIÓN"></Button>
+    <router-link to="/soundifyHome" ><Button  bclass="btn btn-freeVersion  mt-4 pt-3 pb-3 pl-5 pr-5 mb-5 mt-2 mb-2" valueButton="INICIAR SESIÓN"></Button></router-link>
 
 </form>
     </div>

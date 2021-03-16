@@ -24,9 +24,21 @@ const routes = [
   name:"SoundifyHome",
   component:()=> import("../views/SoundifyHome.vue")
 },
+{
+  path:"/soundifySearch",
+  name:"SoundifySearch",
+  component:()=> import("../views/SoundifySearch.vue")
+
+},
+{
+  path:"/soundifyPlaylists",
+  name:"SoundifyPlaylists",
+  component:()=> import("../views/SoundifyPlaylists.vue")
+
+},
+
 
   
-
 {
     path: '/about',
     name: 'About',
