@@ -14,7 +14,7 @@ name:"NavMobile"
 
 }
 </script>
-<style >
+<style scoped >
     #navMobile{
         background-color:rgb(230, 122, 0);
     }
