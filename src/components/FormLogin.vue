@@ -26,7 +26,7 @@ Button
     }
 }
 </script>
-<style>
+<style >
        .form-group label{
 display: flex;
 font-weight: bold;

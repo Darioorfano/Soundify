@@ -29,9 +29,4 @@ export default {
 <style >
    
 
-
-
-
-
-
 </style>

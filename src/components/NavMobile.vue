@@ -14,7 +14,7 @@ name:"NavMobile"
 
 }
 </script>
-<style >
+<style  >
     #navMobile{
         background-color:rgb(230, 122, 0);
     }
@@ -28,7 +28,14 @@ flex-direction: column;
 font-size: 1.5em;
 
 }
+@media (min-width:992px){
 
+#navMobile{
+
+    display:none !important;
+}
+
+}
 
 
 </style>
