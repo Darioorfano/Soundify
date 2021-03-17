@@ -31,7 +31,7 @@ Button
     }
 }
 </script>
-<style scoped >
+<style>
 
  .title-register{
         font-size: 2em;

@@ -27,7 +27,7 @@ export default {
   },
 };
 </script>
-<style scoped>
+<style>
 h5 {
   font-weight: bolder;
 }

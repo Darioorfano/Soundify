@@ -37,6 +37,13 @@ const routes = [
 
 },
 
+{
+  path:"/soundifyPlayer",
+  name:"SoundifyPlayer",
+  component:()=> import("../views/SoundifyPlayer.vue")
+
+},
+
 
   
 

@@ -16,7 +16,7 @@ props:{
 
 }
 </script>
-<style scoped >
+<style  >
     .btn-freeVersion{
      background-color: rgb(230, 122, 0);
   font-size: 1.5em;

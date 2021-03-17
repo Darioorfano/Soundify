@@ -1,7 +1,10 @@
 <template >
   <div>
+    <NavDesktop></NavDesktop>
+    
+    
     <main>
-      <p class="pt-4 text-white recent-Search">Búsquedas recientes</p>
+      <p class="pt-5 text-white recent-Search">Búsquedas recientes</p>
       <div class="row d-flex m-auto">
         <div class="col-4">
           <article class="p-4 bg-danger">
@@ -97,19 +100,20 @@
 </template>
 <script>
 import NavMobile from "@/components/NavMobile.vue";
+import NavDesktop from "@/components/NavDesktop.vue";
 export default {
   name: "SoundifyHome",
   components: {
-    NavMobile,
+    NavMobile,NavDesktop
   },
 };
 </script>
-<style scoped>
+<style>
 
 
 main {
   background-color: rgb(44, 43, 43);
-  height:100vh;
+  min-height:100vh;
 }
 .recent-Search {
   font-size: 1.5em;
@@ -119,5 +123,21 @@ main {
   font-size: 1.5em;
   font-weight: bolder;
   font-weight: bolder;
+}
+
+@media (min-width:992px){
+main{
+width:75vw;
+margin-left: 25vw;
+
+}
+@media(min-width:1400px){
+main{
+  width: 80vw;
+  margin-left:20vw;
+}
+
+
+}
 }
 </style>

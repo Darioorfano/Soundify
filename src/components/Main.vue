@@ -18,7 +18,7 @@ export default {
     }
 }
 </script>
-<style scoped >
+<style>
 .title-index{
     font-weight: bolder;
     font-size: 3.5em;

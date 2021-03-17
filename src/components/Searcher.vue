@@ -21,9 +21,10 @@ export default {
 };
 </script>
 <!--Scoped sirve para que estos estilos apliquen unicamente a este componente-->
-<style scoped>
-form {
-  width: 90vw;
+<style>
+.input-group {
+  width:80vw;
+  margin:auto;
 }
 #searcher {
   border-radius: 10px;
@@ -36,4 +37,30 @@ form {
   z-index: 2;
   padding-right: 1em;
 }
+@media (min-width:576px){
+.input-group{
+margin:auto;
+
+}
+
+
+#searcher{
+  width: 80vw;
+}
+}
+
+
+
+
+@media (min-width:992px){
+#searcher{
+  width:40vw;
+  margin-top: 2.5em;
+}
+
+}
+
+
+
+
 </style>
