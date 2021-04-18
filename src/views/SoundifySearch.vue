@@ -5,6 +5,8 @@
 
  <h1 class="pt-5 mb-4 text-white d-lg-none">Buscar</h1>
     <Searcher></Searcher>
+   
+    <!--
     <section class="mt-2">
       <p class="pt-5 text-white last-searches-title">Últimas búsquedas</p>
       <div class="row-fluid d-flex">
@@ -18,8 +20,8 @@
           <i class="bi bi-x text-white"></i>
         </div>
       </div>
-    </section>
-
+    </section>  
+    -->
     </main>
    
 
@@ -28,12 +30,14 @@
 </template>
 <script>
 import Searcher from "@/components/Searcher.vue";
-import NavMobile from "../components/NavMobile.vue";
-import NavDesktop from "../components/NavDesktop.vue";
+
+import NavMobile from "@/components/NavMobile.vue";
+import NavDesktop from "@/components/NavDesktop.vue";
 export default {
   name: "SoundifySearch",
   components: {
     Searcher,
+
     NavMobile,
     NavDesktop
   },

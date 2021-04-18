@@ -1,8 +1,7 @@
 <template >
   <div>
     <NavDesktop></NavDesktop>
-    
-    
+  
     <main>
       <p class="pt-5 text-white recent-Search">Búsquedas recientes</p>
       <div class="row d-flex m-auto">
@@ -93,18 +92,22 @@
 
 
 
-
+    
+     <Player></Player>
     </main>
+ 
     <NavMobile />
   </div>
 </template>
 <script>
 import NavMobile from "@/components/NavMobile.vue";
 import NavDesktop from "@/components/NavDesktop.vue";
+import Player from "@/components/Player.vue";
 export default {
   name: "SoundifyHome",
   components: {
-    NavMobile,NavDesktop
+    NavMobile,NavDesktop,
+  Player
   },
 };
 </script>

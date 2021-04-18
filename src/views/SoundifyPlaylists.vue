@@ -18,7 +18,7 @@
           <div class="col-6">
             <Button
               bclass="btn btn-freeVersion crearNombreDePlaylist "
-              valueButton="Crear"
+              valueButton="Crear" @click="crearPlayList()"
             ></Button>
           </div>
         </div>
@@ -100,7 +100,11 @@
           <p>Foto</p>
         </div>
       </div>
+    
+
+
     </main>
+
 
     <NavMobile></NavMobile>
   </div>
@@ -108,7 +112,7 @@
 <script>
 import Button from "@/components/Button.vue";
 import NavDesktop from "@/components/NavDesktop.vue";
-import NavMobile from "../components/NavMobile.vue";
+import NavMobile from "@/components/NavMobile.vue";
 
 export default {
   name: "SoundifySearch",
@@ -116,7 +120,9 @@ export default {
     Button,
     NavMobile,
     NavDesktop,
+  
   },
+ 
 };
 </script>
 <style >

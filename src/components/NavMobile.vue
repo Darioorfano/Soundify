@@ -17,6 +17,7 @@ name:"NavMobile"
 <style  >
     #navMobile{
         background-color:rgb(230, 122, 0);
+
     }
 
 .icono{
