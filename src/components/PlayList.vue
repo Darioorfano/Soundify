@@ -5,7 +5,7 @@
         <p>Agregar Cancion</p>
         <p>Borrar playlist</p>
         
-        <div v-for="cancion of canciones">
+        <div :v-for="cancion in canciones" key="1">
             <Cancion title="cancion.title"></Cancion>
 
         </div>

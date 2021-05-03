@@ -5,7 +5,7 @@
 
  <h1 class="pt-5 mb-4 text-white d-lg-none">Buscar</h1>
     <Searcher></Searcher>
-   
+    <Result :datos="{ obtenerResults }"></Result>
     <!--
     <section class="mt-2">
       <p class="pt-5 text-white last-searches-title">Últimas búsquedas</p>
@@ -30,16 +30,21 @@
 </template>
 <script>
 import Searcher from "@/components/Searcher.vue";
-
+import Result from "@/components/Result.vue";
 import NavMobile from "@/components/NavMobile.vue";
 import NavDesktop from "@/components/NavDesktop.vue";
+import { mapGetters } from 'vuex';
+
 export default {
   name: "SoundifySearch",
   components: {
     Searcher,
-
+    Result,
     NavMobile,
     NavDesktop
+  },
+  computed: {
+    ...mapGetters([ 'obtenerResults' ])
   },
 };
 </script>
