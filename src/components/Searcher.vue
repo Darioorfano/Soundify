@@ -6,7 +6,7 @@
           <i
             class="bi bi-search"
             id="lupaBuscador"
-            @keyup.enter="search"
+          
             @click.prevent="search"
           ></i>
         </div>
@@ -15,6 +15,7 @@
           id="searcher"
           class="form-control pl-5"
           placeholder="        Buscar Artistas o canciones"
+          @keyup.enter="search"
         />
       </div>
     </form>
@@ -27,12 +28,10 @@ export default {
   components: {
   },
 
-  data() {
-    return {
-    };
-  },
+
   methods: {
     ... mapMutations([ 'addResults' ]),
+    
     search() {
       var url = "https://cors-anywhere.herokuapp.com/https://api.deezer.com/search?q=";
       var searcher = document.querySelector("#searcher").value;

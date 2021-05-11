@@ -6,15 +6,14 @@
            <tr>
             <th class="">Nombre De La Cancion</th>
             <th class="">Imagen</th>
-            <th class="">Duracion</th>
             <th class="">Artista</th>
         </tr> 
         </thead>
         <tbody v-if="datos.obtenerResults.length > 0">
-            <tr v-for="cancion in datos.obtenerResults" :key="cancion">
+            <tr v-for="cancion in datos.obtenerResults" :key="cancion" @click.prevent="addSong(cancion)">
                 <td>{{cancion.title}}</td>
                 <td><img :src="cancion.album.cover_medium" alt="foto de album"></td>
-                <td>{{cancion.duration}}</td>
+               
                 <td>{{cancion.artist.name}}</td>
             </tr>
         </tbody>
@@ -26,10 +25,24 @@
     </div>
 </template>
 <script>
+import {mapMutations} from "vuex"
 
 export default {
     name:"Result",
-    props:['datos']
+    props:['datos'],
+    methods:{
+
+    ...mapMutations(["agregarCancion"]),
+    
+    addSong(cancion){
+        this.$store.commit('agregarCancion',cancion);
+
+        
+    }
+
+    }
+
+
 }
 </script>
 <style>

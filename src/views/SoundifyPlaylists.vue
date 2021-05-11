@@ -105,7 +105,7 @@
 
     </main>
 
-
+<Player></Player>
     <NavMobile></NavMobile>
   </div>
 </template>
@@ -113,14 +113,14 @@
 import Button from "@/components/Button.vue";
 import NavDesktop from "@/components/NavDesktop.vue";
 import NavMobile from "@/components/NavMobile.vue";
-
+import Player from "@/components/Player.vue"
 export default {
   name: "SoundifySearch",
   components: {
     Button,
     NavMobile,
     NavDesktop,
-  
+  Player
   },
  
 };

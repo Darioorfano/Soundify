@@ -1,5 +1,5 @@
 <template >
-    <div>
+    <div v-if="obtenerCancionesDelReproductor.length >0" >
 <!--Agregarle fixed-bottom para que cuando toque en la flecha hacia abajo del reproductor se posicione arriba del NavMobile-->
 <div class="row-fluid d-flex player">
   <div class="col-2
@@ -11,13 +11,13 @@ arrow-icon-column pt-3">
 <div class="col-4
 song-column">
 
-<p>Nombre</p>
+<p>{{obtenerCancionActual.title}}</p>
 
   </div>
 
 <div class="col-3 artist-column">
 
-<p>Artista</p>
+<p>{{obtenerCancionActual.artist.name}}</p>
 
   </div>
 
@@ -27,23 +27,18 @@ song-column">
 </div>
 
 
-    
-    <!--
-    <Song></Song>-->
-<!--
-<i class="bi bi-skip-start-fill"></i>
-<i class="bi bi-skip-end-fill"></i>
--->
+
     </div>    
     </div>
 </template>
 <script>
-
+import {mapGetters} from "vuex"
 export default {
     name:"Player",
-    components:{
-      
-    }
+
+      computed: {
+    ...mapGetters([ 'obtenerCancionesDelReproductor', "obtenerCancionActual" ])
+  }
 }
 </script>
 <style>

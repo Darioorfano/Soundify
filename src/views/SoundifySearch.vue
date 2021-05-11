@@ -24,8 +24,9 @@
     -->
     </main>
    
-
+<Player></Player>
     <NavMobile />
+
   </div>
 </template>
 <script>
@@ -33,6 +34,7 @@ import Searcher from "@/components/Searcher.vue";
 import Result from "@/components/Result.vue";
 import NavMobile from "@/components/NavMobile.vue";
 import NavDesktop from "@/components/NavDesktop.vue";
+import Player from "@/components/Player.vue";
 import { mapGetters } from 'vuex';
 
 export default {
@@ -41,7 +43,8 @@ export default {
     Searcher,
     Result,
     NavMobile,
-    NavDesktop
+    NavDesktop,
+    Player
   },
   computed: {
     ...mapGetters([ 'obtenerResults' ])
