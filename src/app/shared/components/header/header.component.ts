@@ -22,7 +22,7 @@ export class HeaderComponent implements OnInit {
     const inputValue = this.searchForm.get('music')?.value ?? null;
     console.log(inputValue)
     if (inputValue !== null) {
-      
+
       this.spotifyService.searchMusic(inputValue)
         .subscribe((data: any) => {
           console.log(this.canciones)
@@ -32,7 +32,7 @@ export class HeaderComponent implements OnInit {
       console.error('this.inputValue es null');
     }
   }
-  // ngOnInit(): void {
-  //  this.buscarMusica() 
-  // }
+  ngOnInit(): void {
+   this.buscarMusica()
+  }
 }

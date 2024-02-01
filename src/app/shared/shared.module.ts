@@ -4,6 +4,7 @@ import { SideBarComponent } from './components/side-bar/side-bar.component';
 import { HeaderComponent } from './components/header/header.component';
 import { MediaPlayerComponent } from './components/media-player/media-player.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { SectionGenericComponent } from './components/section-generic/section-generic.component';
 
 
 
@@ -11,7 +12,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
   declarations: [
     SideBarComponent,
     HeaderComponent,
-    MediaPlayerComponent
+    MediaPlayerComponent,
+    SectionGenericComponent
   ],
   imports: [
     CommonModule,
@@ -21,7 +23,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
   exports:[
     SideBarComponent,
     HeaderComponent,
-    MediaPlayerComponent
+    MediaPlayerComponent,
+    SectionGenericComponent
 
   ]
 
