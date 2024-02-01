@@ -1,1 +1,12 @@
-<p>header works!</p>
+<div class="container">
+<form [formGroup]="searchForm" (ngSubmit)="buscarMusica()">
+    <label for="music">Buscar música:</label>
+    <input type="text" id="music" formControlName="music">
+    <button type="submit">Buscar</button>
+  </form>
+  @for (cancion of canciones; track cancion) {
+    {{ cancion.name }}
+  } @empty {
+    Empty list of users
+  }
+</div>
