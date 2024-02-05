@@ -5,6 +5,8 @@ import { HeaderComponent } from './components/header/header.component';
 import { MediaPlayerComponent } from './components/media-player/media-player.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { SectionGenericComponent } from './components/section-generic/section-generic.component';
+import { PlayListHeaderComponent } from './components/play-list-header/play-list-header.component';
+import { PlayListBodyComponent } from './components/play-list-body/play-list-body.component';
 
 
 
@@ -13,7 +15,9 @@ import { SectionGenericComponent } from './components/section-generic/section-ge
     SideBarComponent,
     HeaderComponent,
     MediaPlayerComponent,
-    SectionGenericComponent
+    SectionGenericComponent,
+    PlayListHeaderComponent,
+    PlayListBodyComponent
   ],
   imports: [
     CommonModule,
@@ -24,7 +28,9 @@ import { SectionGenericComponent } from './components/section-generic/section-ge
     SideBarComponent,
     HeaderComponent,
     MediaPlayerComponent,
-    SectionGenericComponent
+    SectionGenericComponent,
+    PlayListHeaderComponent,
+    PlayListBodyComponent
 
   ]
 
