@@ -1,0 +1,19 @@
+<div>
+  <form [formGroup]="searchForm">
+    <label for="music">Buscar Música:</label>
+    <input type="text" id="music" formControlName="music" placeholder="Ingrese el nombre de la canción" (input)="buscarMusica()">
+    <button type="submit">Buscar</button>
+  </form>
+</div>
+
+<div *ngIf="canciones.length > 0">
+  <h2>Resultados de la búsqueda:</h2>
+  <ul>
+    @for (cancion of canciones; track cancion) {
+      <li>
+        {{ cancion.name }} - {{ cancion.artists[0].name }}
+      </li>
+
+  }
+  </ul>
+</div>
